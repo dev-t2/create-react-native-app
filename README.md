@@ -1,6 +1,10 @@
 # Setup Create React Native App
 
-## [Create React Native App](https://github.com/expo/create-react-native-app)
+## 1. [Setting up the development environment](https://reactnative.dev/docs/environment-setup)
+
+## 2. [Create React Native App](https://github.com/expo/create-react-native-app)
+
+- [Introducing Create React Native App](https://reactnative.dev/blog/2017/03/13/introducing-create-react-native-app)
 
 ```
 npx create-react-native-app
@@ -8,7 +12,7 @@ npx create-react-native-app
 
 - How would you like to start » Default new app
 
-## [Adding TypeScript to an Existing Project](https://reactnative.dev/docs/typescript#adding-typescript-to-an-existing-project)
+## 3. [Adding TypeScript to an Existing Project](https://reactnative.dev/docs/typescript#adding-typescript-to-an-existing-project)
 
 ```
 npm install -D typescript @types/jest @types/react @types/react-native @types/react-test-renderer
@@ -38,7 +42,7 @@ tsconfig.json
 - Rename a JavaScript file to be \*.tsx
 - You should leave the ./index.js entrypoint file as it is otherwise you may run into an issue when it comes to bundling a production build.
 
-## [ESLint](https://eslint.org)
+## 4. [ESLint](https://eslint.org)
 
 ```
 npm init @eslint/config
@@ -53,7 +57,7 @@ npm init @eslint/config
 7. Would you like to install them now? · Yes
 8. Which package manager do you want to use? · NPM
 
-## [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)
+## 5. [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)
 
 ```
 npm install eslint-plugin-react-hooks --save-dev
@@ -75,4 +79,4 @@ npm install eslint-plugin-react-hooks --save-dev
 }
 ```
 
-## Finally, clean up project-wide file codes 🚀
+## 6. Finally, clean up project-wide file codes 🚀
