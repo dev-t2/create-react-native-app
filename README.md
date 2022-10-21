@@ -35,6 +35,9 @@ tsconfig.json
 }
 ```
 
+- Rename a JavaScript file to be \*.tsx
+- You should leave the ./index.js entrypoint file as it is otherwise you may run into an issue when it comes to bundling a production build.
+
 ## [ESLint](https://eslint.org)
 
 ```
