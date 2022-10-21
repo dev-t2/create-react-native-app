@@ -62,6 +62,8 @@ npm install eslint-plugin-react-hooks --save-dev
 ```
 
 ```
+.eslintrc.json
+
 {
   "plugins": [
     // ...
