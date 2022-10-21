@@ -74,3 +74,5 @@ npm install eslint-plugin-react-hooks --save-dev
   }
 }
 ```
+
+## Clean up project-wide file codes
