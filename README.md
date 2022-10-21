@@ -14,7 +14,31 @@ npx create-react-native-app
 npm install -D typescript @types/jest @types/react @types/react-native @types/react-test-renderer
 ```
 
-- Add a TypeScript config file. Create a tsconfig.json in the root of your project
+```
+tsconfig.json
+
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react-native",
+    "lib": ["es2017"],
+    "types": ["react-native", "jest"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "strict": true,
+    "target": "esnext"
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ]
+}
+```
 
 ## [ESLint](https://eslint.org)
 
@@ -22,17 +46,31 @@ npm install -D typescript @types/jest @types/react @types/react-native @types/re
 npm init @eslint/config
 ```
 
-- How would you like to use ESLint? · To check syntax only
-- What type of modules does your project use? · JavaScript Modules
-- Which framework does your project use? · React
-- Does your project use TypeScript? · Yes
-- Where does your code run? · Node
-- What format do you want your config file to be in? · JSON
-- Would you like to install them now? · Yes
-- Which package manager do you want to use? · NPM
+1. How would you like to use ESLint? · To check syntax only
+2. What type of modules does your project use? · JavaScript Modules
+3. Which framework does your project use? · React
+4. Does your project use TypeScript? · Yes
+5. Where does your code run? · Node
+6. What format do you want your config file to be in? · JSON
+7. Would you like to install them now? · Yes
+8. Which package manager do you want to use? · NPM
 
 ## [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)
 
 ```
 npm install eslint-plugin-react-hooks --save-dev
+```
+
+```
+{
+  "plugins": [
+    // ...
+    "react-hooks"
+  ],
+  "rules": {
+    // ...
+    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "warn" // Checks effect dependencies
+  }
+}
 ```
