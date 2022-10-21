@@ -4,8 +4,6 @@
 
 ## 2. [Create React Native App](https://github.com/expo/create-react-native-app)
 
-- [Introducing Create React Native App](https://reactnative.dev/blog/2017/03/13/introducing-create-react-native-app)
-
 ```
 npx create-react-native-app
 ```
