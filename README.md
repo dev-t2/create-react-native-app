@@ -31,12 +31,7 @@ tsconfig.json
     "strict": true,
     "target": "esnext"
   },
-  "exclude": [
-    "node_modules",
-    "babel.config.js",
-    "metro.config.js",
-    "jest.config.js"
-  ]
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js"]
 }
 ```
 
